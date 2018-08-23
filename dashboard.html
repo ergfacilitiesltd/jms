@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+data-balloon="I'm a tooltip." data-balloon-pos="right" -->
+<title>Dashboard</title>
+</head>
+<body>
+  <div id="wrapper" class="animate">
+    <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <span class=" leftmenutrigger"><i class="fas fa-bars shortmenu animate"></i></span>
+      <a class="navbar-brand" href="#"><img src="img/logo-2.svg" class="logo"> ERG Facilities Ltd</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav animate side-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Dashboard"><i class="fas fa-home"></i> Dashboard <i class="fas fa-home shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Profile"><i class="fas fa-user"></i> Profile <i class="fas fa-user shortmenu animate"></i></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-users"></i> Users <i class="fas fa-users shortmenu animate"></i></a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-copy"></i> My Jobs <i class="fas fa-copy shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-address-book"></i> Extentions <i class="fas fa-address-book shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-briefcase"></i> Reports <i class="fas fa-briefcase shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Settings"><i class="fas fa-cogs"></i> Settings <i class="fas fa-cogs shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html" title="Logout"><i class="fas fa-power-off"></i> Logout <i class="fas fa-power-off shortmenu animate"></i></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-md-auto d-md-flex">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i> Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> Tom M</a>
+          </li>  -->  
+          
+          <li class="nav-item">
+            <a class="nav-link text-right" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tom M <i class="fas fa-angle-down"></i> <span class="small-text">You are logged in as <strong class="green">Admin</strong></span></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">Profile</button>
+              <button class="dropdown-item" type="button">Settings</button>
+              <button class="dropdown-item" type="button">Logout</button>
+            </div>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <!-- <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Try Other</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
+              <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+              <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
+              <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Try Other</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
+              <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+              <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
+              <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-lg-6 buttons-menu">
+          <a href="jobbooking.html"><button class="book-btn">Create a job</button></a>
+          <button class="book-btn red">View last Job</button>
+        </div>
+        <div class="col-lg-6">  
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for a job...">
+          <span class="input-group-btn">
+            <button class="btn btn-default search-btn" type="button">Search</button>
+          </span>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Jobs Booked</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Overview</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+ 
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+
+    <script>if (window.module) module = window.module;</script>
+
+     </body>
+</html>
