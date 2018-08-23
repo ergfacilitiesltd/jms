@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+data-balloon="I'm a tooltip." data-balloon-pos="right" -->
+<title>Job Booking</title>
+</head>
+<body class="job-page">
+  <div id="wrapper" class="animate">
+    <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <span class=" leftmenutrigger"><i class="fas fa-bars shortmenu animate"></i></span>
+      <a class="navbar-brand" href="#"><img src="img/logo-2.svg" class="logo"> ERG Facilities Ltd</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav animate side-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Dashboard"><i class="fas fa-home"></i> Dashboard <i class="fas fa-home shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Profile"><i class="fas fa-user"></i> Profile <i class="fas fa-user shortmenu animate"></i></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-users"></i> Users <i class="fas fa-users shortmenu animate"></i></a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-copy"></i> My Jobs <i class="fas fa-copy shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-address-book"></i> Extentions <i class="fas fa-address-book shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Users"><i class="fas fa-briefcase"></i> Reports <i class="fas fa-briefcase shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Settings"><i class="fas fa-cogs"></i> Settings <i class="fas fa-cogs shortmenu animate"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html" title="Logout"><i class="fas fa-power-off"></i> Logout <i class="fas fa-power-off shortmenu animate"></i></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-md-auto d-md-flex">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i> Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> Tom M</a>
+          </li>  -->  
+          
+          <li class="nav-item">
+            <a class="nav-link text-right" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tom M <i class="fas fa-angle-down"></i> <span class="small-text">You are logged in as <strong class="green">Admin</strong></span></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">Profile</button>
+              <button class="dropdown-item" type="button">Settings</button>
+              <button class="dropdown-item" type="button">Logout</button>
+            </div>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <!-- <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Try Other</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
+              <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+              <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
+              <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Try Other</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Bootstrap 4.0.0 Snippet by pradeep330</h6>
+              <p class="card-text">You can also try different version of Bootstrap V4 side menu. Click below link to view all Bootstrap Menu versions.</p>
+              <a href="https://bootsnipp.com/pradeep330" class="card-link">link</a>
+              <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Customer Booking/Quote</h5>
+              <form action="" id="jobbooking" method="GET">
+                
+      <div class="form-group col-md-6" >
+      <label><input type="radio" name="property" class="property" value="Domestic"> Domestic</label>
+      <label><input type="radio" name="property" class="property" value="Commercial"> Commerical</label>
+      <label><input type="radio" name="property" class="property" value="Accounts" disabled> Accounts</label>
+    
+<div class="selectdiv">
+  <label for="trades">Choose a trade</label>
+      <select name="trades" class="form-control" id="trades" >
+        <option value="No Selection">No Selection</option>
+      <option value="Plumbing">Plumbing</option>
+      <option value="Heating">Gas &amp; Heating</option>
+      <option value="Drainage">Drainage</option>
+      <option value="Pest Control">Pest Control</option>
+      <option value="Glazing">Glazing</option>
+      <option value="Electrics">Electrics</option>
+      <option value="Locks">Locks</option>
+    </select>
+  </div>
+      <div id="showmeplumbing" class="selectdiv">
+        <select name="problems" id="problems" class="form-control">
+        <option value="No Selection">No Selection</option>
+        <option value="Blockage">Blockage</option>
+        <option value="Burst Pipe">Burst Pipe</option>
+      </select>
+
+      <input type="text" id="plumbingInput">
+      </div>
+
+      <div id="showmeheating" class="selectdiv">
+        <select name="problems" id="problems" class="form-control">
+          <option value="No Selection">No Selection</option>
+        <option value="Gas Leak">Gas Leak</option>
+        <option value="Gas Certificate">Gas Certificate</option>
+      </select>
+
+      <input type="text" id="heatingInput">
+      </div>
+</div>
+<div class="form-group col-md-6" >
+
+
+
+      <input type="submit" formaction="dashboard.html" class="booking-btn red" value="Cancel" />
+      <input type="submit" formaction="quote.html" class="booking-btn blue" value="Quote" />
+      <input type="submit" formaction="booking.html" class="booking-btn" value="Next"/>
+       </div>
+    </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+ 
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+
+    <script>if (window.module) module = window.module;</script>
+
+     </body>
+</html>
